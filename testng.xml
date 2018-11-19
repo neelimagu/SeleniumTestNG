@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+
+<listeners>
+ 
+ <listener class-name="Analyzer.MyTransformer"></listener>
+ 
+ </listeners>
+ 
+  <test thread-count="5" name="Test">
+ <groups>
+ <run>
+ <exclude name = "Login"/>
+ </run>
+ </groups>
+ 
+ 
+  
+    <classes>
+    
+     <class name = "testNGPackage.AnalyzerTest"></class> 
+     <!--  <class name="testNGPackage.Example2forGroups"/> -->
+      
+    </classes>
+    
+  </test> <!-- Test -->
+  
+</suite> <!-- Suite -->
